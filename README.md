@@ -1,14 +1,29 @@
 
-# 🌐 Project Requirements Web Programming 2020 🎓 UniTs
+# 🌐 Project Web Programming 2020 🎓 UniTs
 
-## 📝 Project Overview
+## Table of Contents
+1. [🌐 Project requirements](#project-requirements)
+2. [📚 Technologies Used](#technologies-used)
+3. [⚙️ Installation](#installation)
+4. [🚀 Usage](#usage)
+5. [✨ Features](#features)
+6. [📦 Dependencies](#dependencies)
+7. [🛠️ Configuration](#configuration)
+8. [📖 Documentation](#documentation)
+9. [🔍 Examples](#examples)
+10. [🐛 Troubleshooting](#troubleshooting)
+11. [👥 Contributors](#contributors)
+12. [📜 License](#license)
+
+
+## 📝 Project Requirements
 
 ### 📜 Introduction
 Develop a **web platform** to distribute documents to end clients, tracking their reading (corresponding to file download).
 
 Documents can be uploaded via a **web interface** or through a **web service** (SOAP or REST, your choice). You must also create an essential client to demonstrate your web service.
 
-> Elements marked with **"EXTRA:"** earn additional points (e.g., for honors) but are not strictly necessary.
+> Elements marked with **"EXTRA:"** earn additional points (e.g., for honours) but are not strictly necessary.
 
 ### 📂 Entities
 There are two types of entities: **Files** and **Actors**. Actors are divided into:
@@ -113,5 +128,101 @@ The system must expose a web service to send a file to a Consumer. The method sh
 - The file to upload 📄
 
 If the Consumer already exists, it will only upload the file and send them a Notification (see the dedicated paragraph); otherwise, it will first create a new Consumer.
+
+## Technologies Used
+
+### Back-End:
+- **IntelliJ IDEA 2020**
+- **Google Cloud SDK for Java 8**
+- **Maven**
+- **GAE Servlet Container**
+- **RESTful Web Services** with HATEOAS paradigm using JAX-RS API with Jersey implementation
+- **Swagger** for documentation compliant with OpenAPI
+- **Google Mail API**
+- **Auth0/java-jwt library** for programmatic security using JWT
+- **GAE Datastore** NoSQL database with Objectify ORM
+- File storage in DB using base64 encoding, files downloaded as octet-stream
+
+### Front-End:
+- **Visual Studio Code** (with Vetur extension)
+- **VUE CLI**
+- **BootstrapVue** dependency
+- **Axios** HTTP client library for handling HTTP requests as promises
+
+## Installation
+To set up this project locally, follow these steps:
+1. Clone the repository.
+2. Install the required dependencies for both front-end and back-end.
+3. Configure the necessary environment variables and API keys.
+4. Deploy the application to Google App Engine if needed.
+
+## Usage
+### Essential REST Client:
+- Client for logging in and uploading a document with a pre-registered uploader present in the GAE Datastore.
+- **Username:** `up01`
+- **Password:** `up01`
+- For uploading a file for an already registered consumer, leave the name and email fields empty.
+
+### Basic Admin User:
+- **Username:** `admin@luca`
+- **Password:** `Password123`
+- A pre-registered uploader is available on the server to allow the execution of the REST Client.
+
+### Live Version:
+You can access the live version of the project [here](https://programmazioneweb2020-319008.oa.r.appspot.com/).
+
+## Features
+- Comprehensive RESTful API with HATEOAS paradigm
+- Secure authentication using JWT
+- NoSQL database integration with GAE Datastore
+- Real-time file upload and download functionality
+- Responsive front-end design using Vue.js and BootstrapVue
+
+## Dependencies
+- IntelliJ IDEA 2020
+- Google Cloud SDK for Java 8
+- Maven
+- GAE Servlet Container
+- JAX-RS API with Jersey
+- Swagger
+- Google Mail API
+- Auth0/java-jwt
+- GAE Datastore with Objectify ORM
+- Visual Studio Code
+- VUE CLI
+- BootstrapVue
+- Axios
+
+## Configuration
+Ensure to set up the following configurations:
+- Google Cloud SDK credentials
+- Database connection settings
+- Mail API configuration
+- JWT secret keys for authentication
+
+## Documentation
+The project uses Swagger for API documentation. Access the API documentation by navigating to the `/swagger-ui` endpoint on the live version of the application.
+
+## Examples
+Here are some example requests and responses for the REST API:
+
+### Login Request:
+```json
+{
+  "username": "up01",
+  "password": "up01"
+}
+```
+
+
+
+
+# Web Programming Project 2020
+
+## Introduction
+This project showcases a comprehensive web application leveraging various modern technologies for both back-end and front-end development. It highlights the implementation of RESTful web services, secure authentication, and a responsive front-end interface.
+
+
+
 """
 
