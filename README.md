@@ -1,6 +1,4 @@
-# Reverting to the previous version with icons and providing the readme file for download.
 
-readme_content = """
 # 📄 Project Requirements 2018
 
 ## 🌐 Web Programming 2017-2018
@@ -120,9 +118,3 @@ The system must expose a web service to send a file to a Consumer. The method sh
 If the Consumer already exists, it will only upload the file and send them a Notification (see the dedicated paragraph); otherwise, it will first create a new Consumer.
 """
 
-readme_file_path = "/mnt/data/README_Project_Requirements_2018.md"
-
-with open(readme_file_path, "w") as file:
-    file.write(readme_content)
-
-readme_file_path
