@@ -129,7 +129,7 @@ The system must expose a web service to send a file to a Consumer. The method sh
 
 If the Consumer already exists, it will only upload the file and send them a Notification (see the dedicated paragraph); otherwise, it will first create a new Consumer.
 
-## Technologies Used
+## 📚 Technologies Used
 
 ### Back-End:
 - **IntelliJ IDEA 2020**
@@ -149,14 +149,14 @@ If the Consumer already exists, it will only upload the file and send them a Not
 - **BootstrapVue** dependency
 - **Axios** HTTP client library for handling HTTP requests as promises
 
-## Installation
+## ⚙️ Installation
 To set up this project locally, follow these steps:
 1. Clone the repository.
 2. Install the required dependencies for both front-end and back-end.
 3. Configure the necessary environment variables and API keys.
 4. Deploy the application to Google App Engine if needed.
 
-## Usage
+## 🚀 Usage
 ### Essential REST Client:
 - Client for logging in and uploading a document with a pre-registered uploader present in the GAE Datastore.
 - **Username:** `up01`
@@ -171,14 +171,14 @@ To set up this project locally, follow these steps:
 ### Live Version:
 You can access the live version of the project [here](https://programmazioneweb2020-319008.oa.r.appspot.com/).
 
-## Features
+## ✨ Features
 - Comprehensive RESTful API with HATEOAS paradigm
 - Secure authentication using JWT
 - NoSQL database integration with GAE Datastore
 - Real-time file upload and download functionality
 - Responsive front-end design using Vue.js and BootstrapVue
 
-## Dependencies
+##📦 Dependencies
 - IntelliJ IDEA 2020
 - Google Cloud SDK for Java 8
 - Maven
@@ -193,17 +193,17 @@ You can access the live version of the project [here](https://programmazioneweb2
 - BootstrapVue
 - Axios
 
-## Configuration
+## 🛠️ Configuration
 Ensure to set up the following configurations:
 - Google Cloud SDK credentials
 - Database connection settings
 - Mail API configuration
 - JWT secret keys for authentication
 
-## Documentation
+## 📖 Documentation
 The project uses Swagger for API documentation. Access the API documentation by navigating to the `/swagger-ui` endpoint on the live version of the application.
 
-## Examples
+## 🔍 Examples
 Here are some example requests and responses for the REST API:
 
 ### Login Request:
@@ -217,10 +217,7 @@ Here are some example requests and responses for the REST API:
 
 
 
-# Web Programming Project 2020
 
-## Introduction
-This project showcases a comprehensive web application leveraging various modern technologies for both back-end and front-end development. It highlights the implementation of RESTful web services, secure authentication, and a responsive front-end interface.
 
 
 
