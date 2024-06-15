@@ -1,8 +1,7 @@
 
 # 📄 Project Requirements 2018
 
-## 🌐 Web Programming 2017-2018
-### 🎓 UniTs
+## 🌐 Web Programming 2017-2018 🎓 UniTs
 
 ## 📝 Project Overview
 
