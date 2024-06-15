@@ -178,7 +178,7 @@ You can access the live version of the project [here](https://programmazioneweb2
 - Real-time file upload and download functionality
 - Responsive front-end design using Vue.js and BootstrapVue
 
-##📦 Dependencies
+## 📦 Dependencies
 - IntelliJ IDEA 2020
 - Google Cloud SDK for Java 8
 - Maven
